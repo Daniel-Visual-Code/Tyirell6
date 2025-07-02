@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="Stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="profile-card">
+    <div class="profile-photo-container">
+      <img src="1750448395004.jpg" alt="Tyirell Lee-Bradford" class="profile-photo" />
+    </div>
+
+
+    <div class="profile-info">
+      <div class="header">
+        <h1>Tyirell Lee-Bradford</h1>
+        <div class="social-icons">
+          <a href="https://twitter.com/ty_yoi" target="_blank">
+            <img src="twitter-6359396_640 (1).webp" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com/in/tyirell-lee-bradford-400251318/" target="_blank">
+            <img src="download.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+      <div class="status-badge">Motivated High School Senior | Aspiring IT & Real Estate Professional | BSU President | JRIED IT Camp Alum | Student-Athlete & Team Leader|ProX Intern</div>
+      <p class="location">Shawnee, KS</p>
+      <p class="role">Design • 2 years experience using</p>
+
+
+
+
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Microsoft 365</span>
+   
+     </div>
+
+
+
+      <div class="contact-info">
+        <a href="mailto:leetyirell78@gmail.com" class="contact-button">📧 Email Me</a>
+        <a href="tel:+19136899174" class="contact-button">📞 Call Me</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('my-story')">My Story</button>
+    <button class="tab" onclick="showTab('skills')">Skills</button>
+    <button class="tab" onclick="showTab('projects')">Projects</button>
+    <button class="tab" onclick="showTab('experience')">Experience</button>
+  </div>
+
+
+  <div id="my-story" class="tab-content active">
+    <h2>My Story</h2>
+<img src="JReid+InDeed+logo.png" alt="JRied indeed logo"width="50" 
+     height="50" />
+    <p>
+Over the past year, I’ve had the opportunity to grow in ways I never expected through the Jreid Indeed program. What started as an interest in real estate quickly turned into a deep dive into IT, coding, and professional development.
+
+Through hands-on projects like coding in Minecraft and building personal websites with HTML and CSS, I discovered a passion for tech and teamwork. I also gained valuable skills in Microsoft 365, finance, and career readiness—including creating a polished LinkedIn profile and connecting with industry professionals, including gamers and tech experts.
+
+Most importantly, I found a supportive community that’s helped shape my goals and confidence. I’m excited to keep learning, growing, and building a future in tech.    </p>
+  </div>
+
+  <div id="skills" class="tab-content">
+    <h2>Skills</h2>
+    <p>At The Jreid Indeed IT camp, I learned how to build my own website using HTML, CSS, and JavaScript. I used HTML to create the structure of my site, CSS to style it and make it look good, and JavaScript to add interactive features like buttons and animations. These skills helped me turn a basic webpage into something fun, creative, and personalized.
+
+</p>
+  </div>
+
+  <div id="projects" class="tab-content">
+    <h2>Projects</h2>
+    <p>Over the past two years at IT camp, I’ve worked on creative and technical projects that helped me grow as a team player and a problem solver. Last year, I collaborated with a group to design a custom Minecraft world, coding pixel art like the Chiefs and Bulls logos. This year, I’ve been building my own website, creating a LinkedIn profile, and learning CPR and cardiac arrest response through AHA. These experiences have taught me valuable skills in coding, design, teamwork, and real-world readiness.
+
+</p>
+  </div>
+
+  <div id="experience" class="tab-content">
+  
+    <h2>Experience</h2>
+    <p>Jreid Indeed
+June 2024 – Present | Kansas City, MO
+         
+Transitioned from an initial interest in real estate to a hands-on IT and tech-focused learning experience.
+Gained foundational coding skills through creative platforms like Minecraft, leading to deeper understanding of programming logic and teamwork.
+Built and designed personal websites using HTML and CSS, and developed proficiency in Microsoft 365 tools.
+Created a professional LinkedIn profile and digital resume as part of career readiness training.
+Participated in workshops with finance experts, college advisors, and industry professionals to understand real-world applications of tech and business.
+Engaged with mentors in gaming and tech industries, expanding knowledge of career paths and networking opportunities.
+Collaborated with a close-knit team of peers, building strong communication and project management skills.</p>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.getElementsByClassName('tab-content');
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+      }
+      document.getElementById(tabId).classList.add('active');
+
+      const tabButtons = document.getElementsByClassName('tab');
+      for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+      }
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
